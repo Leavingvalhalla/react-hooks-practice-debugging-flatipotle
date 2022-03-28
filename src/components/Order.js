@@ -1,11 +1,12 @@
-import React, { useState } from "react";
-import burritoImg from "../images/burrito-bowl.jpg";
+import React, { useState } from 'react';
+import burritoImg from '../images/burrito-bowl.jpg';
+import Side from './Side';
 
 function Order(props) {
   const [isClicked, setIsClicked] = useState(false);
 
   function handleClick() {
-    isClicked = !isClicked;
+    setIsClicked((isClicked) => !isClicked);
   }
 
   return (
@@ -16,15 +17,15 @@ function Order(props) {
       <div className="content">
         <b>Protein:</b>
         <br />
-        {props.protein.length > 0 ? props.protein.join(", ") : "None"}
+        {props.protein.length > 0 ? props.protein.join(', ') : 'None'}
         <br />
         <b>Fillings:</b>
         <br />
-        {props.fillings.length > 0 ? props.fillings.join(", ") : "None"}
+        {props.fillings.length > 0 ? props.fillings.join(', ') : 'None'}
         <br />
         <b>Toppings:</b>
         <br />
-        {props.toppings.length > 0 ? props.toppings.join(", ") : "None"}
+        {props.toppings.length > 0 ? props.toppings.join(', ') : 'None'}
         <br />
       </div>
       <div className="extra content">
@@ -37,7 +38,7 @@ function Order(props) {
         )}
 
         {/* this is just a shortcut to writing state.isClicked ? <Side sides={props.sides} /> : null */}
-        {state.isClicked && <Side sides={props.sides} />}
+        {isClicked && <Side sides={props.sides} />}
       </div>
     </div>
   );

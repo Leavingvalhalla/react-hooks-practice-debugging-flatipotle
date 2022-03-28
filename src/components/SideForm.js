@@ -1,11 +1,11 @@
-import React from "react";
-import chipsGuac from "../images/sides/chips-guac.png";
-import chipsQueso from "../images/sides/chips-queso.png";
-import chipssalsa from "../images/sides/chips-salsa.png";
-import chips from "../images/sides/chips.png";
-import drink from "../images/sides/drink.png";
-import taco from "../images/sides/taco.png";
-import tortilla from "../images/sides/tortilla.png";
+import React from 'react';
+import chipsGuac from '../images/sides/chips-guac.png';
+import chipsQueso from '../images/sides/chips-queso.png';
+import chipssalsa from '../images/sides/chips-salsa.png';
+import chips from '../images/sides/chips.png';
+import drink from '../images/sides/drink.png';
+import taco from '../images/sides/taco.png';
+import tortilla from '../images/sides/tortilla.png';
 
 function SideForm(props) {
   return (
@@ -21,7 +21,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips"
               name="sides"
-              checked={props.sides.includes("Chips")}
+              checked={props.sides.includes('Chips')}
               onChange={props.handleChange}
             />
             <img src={chips} height="100px" width="100px" alt="chips" />
@@ -36,7 +36,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Salsa"
               name="sides"
-              checked={props.sides.includes("Chips & Salsa")}
+              checked={props.sides.includes('Chips & Salsa')}
               onChange={props.handleChange}
             />
             <img
@@ -56,7 +56,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Guac"
               name="sides"
-              checked={props.sides.includes("Chips & Guac")}
+              checked={props.sides.includes('Chips & Guac')}
               onChange={props.handleChange}
             />
             <img
@@ -76,7 +76,7 @@ function SideForm(props) {
               type="checkbox"
               value="Chips & Queso"
               name="sides"
-              checked={props.sides.includes("Chips & Queso")}
+              checked={props.sides.includes('Chips & Queso')}
               onChange={props.handleChange}
             />
             <img
@@ -96,7 +96,7 @@ function SideForm(props) {
               type="checkbox"
               value="Tortilla"
               name="sides"
-              checked={props.sides.includes("Tortilla")}
+              checked={props.sides.includes('Tortilla')}
               onChange={props.handleChange}
             />
             <img src={tortilla} height="100px" width="100px" alt="tortilla" />
@@ -111,7 +111,7 @@ function SideForm(props) {
               type="checkbox"
               value="Taco"
               name="sides"
-              checked={props.sides.includes("Taco")}
+              checked={props.sides.includes('Taco')}
               onChange={props.handleChange}
             />
             <img src={taco} height="100px" width="100px" alt="taco" />
@@ -126,7 +126,7 @@ function SideForm(props) {
               type="checkbox"
               value="Fountain Drink"
               name="sides"
-              checked={props.sides.includes("Fountain Drink")}
+              checked={props.sides.includes('Fountain Drink')}
               onChange={props.handleChange}
             />
             <img
@@ -142,3 +142,5 @@ function SideForm(props) {
     </>
   );
 }
+
+export default SideForm;
